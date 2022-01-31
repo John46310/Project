@@ -34,10 +34,8 @@ nav .content .links{
   margin-left: 80px;
   display: flex;
 }
-.content .logo a{
-  color: #fff;
-  font-size: 30px;
-  font-weight: 600;
+.content .logo img{
+  width: 250px;
 }
 .content .links li{
   list-style: none;
@@ -190,6 +188,10 @@ nav .content .links{
     width: 100%; 
     left: 0; 
   }
+.center-nav ul li a { 
+  cursor: pointer;
+
+  }
 
 
 
@@ -222,6 +224,8 @@ nav .content .links{
     text-decoration: none;
     letter-spacing: 0.15em;
     padding: 15px 20px;
+    cursor: pointer;
+
   }
 }
 
@@ -301,6 +305,9 @@ nav .content .links{
 .center-nav ul li a:after{
     display: none;
 }
+.center-nav ul li a{
+  cursor: pointer;
+}
 .center-nav ul li a:hover{
     color: #4c535f;
 }
@@ -347,5 +354,299 @@ nav .content .links{
     color: #4c535f;
 }
 }
+.info-box{
+  border: 1px solid;
+  border-color: rgb(231, 224, 224);
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 50px auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+  padding: 30px;
+ }
+.info-box input, .info-box textarea{
+  width: 100%;    
+  padding: 10px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  background: #f0f0f0;
+  
+}
+.info-box h2{
+  font-size: 25px;
+  font-weight: 500;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+  }
+  .center h1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+  }
+  .center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+  }
+  .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+  }
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #2691d9;
+    transition: .5s;
+  }
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    top: -5px;
+    color: #2691d9;
+  }
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before{
+    width: 100%;
+  }
+  .pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+  }
+  .pass:hover{
+    text-decoration: underline;
+  }
+  input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: rgb(38, 145, 217);
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+  input[type="submit"]:hover{
+    border-color: rgb(16, 91, 141);
+    transition: .5s;
+  }
+  .signup_link{
+    text-decoration: none;
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+  .signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+  }
+  .signup_link a:hover{
+    text-decoration: underline;
+  }
+  .wrapper2{
+    max-width: 500px;
+    width: 100%;
+    top: 50%;
+    background: #fff;
+    margin: 100px auto;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.125);
+    padding: 30px;
+  }
+  
+  .wrapper2 .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #7a6217;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .wrapper2 .form{
+    width: 100%;
+  }
+  
+  .wrapper2 .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .wrapper2 .form .inputfield label{
+     width: 200px;
+     color: #757575;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .wrapper2 .form .inputfield .input,
+  .wrapper2 .form .inputfield .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .wrapper2 .form .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+  }
+  
+  .wrapper2 .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+  .wrapper2 .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  .wrapper2 .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  
+  .wrapper2 .form .inputfield .input:focus,
+  .wrapper2 .form .inputfield .textarea:focus,
+  .wrapper2 .form .inputfield .custom_select select:focus{
+    border: 1px solid #fec107;
+  }
+  
+  .wrapper2 .form .inputfield p{
+     font-size: 14px;
+     color: #757575;
+  }
+  .wrapper2 .form .inputfield .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .wrapper2 .form .inputfield .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .wrapper2 .form .inputfield .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgb(38, 145, 217);
+    display: block;
+    position: relative;
+  }
+  .wrapper2 .form .inputfield .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+  }
+  .wrapper2 .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+    background: rgb(38, 145, 217);
+  }
+  
+  .wrapper2 .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+  }
+  
+  .wrapper2 .form .inputfield .btn{
+    padding: 8px 10px;
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: rgb(38, 145, 217);
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .wrapper2 .form .inputfield .btn:hover{
+    background: #1b82c7;
+  }
+  
+  .wrapper2 .form .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  
+  @media (max-width:420px) {
+    .wrapper2 .form .inputfield{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .wrapper2 .form .inputfield label{
+      margin-bottom: 5px;
+    }
+    .wrapper2 .form .inputfield.terms{
+      flex-direction: row;
+    }
+  }
+  
 
 
