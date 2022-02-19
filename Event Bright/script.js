@@ -220,3 +220,4 @@ btn4.addEventListener("click", function () {
 btn5.addEventListener("click", function () {
   document.querySelector(".cards").innerHTML = foodnDrink;
 });
+

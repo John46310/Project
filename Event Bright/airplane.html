@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yonas</title>
+</head>
+<body>
+    
+    <button class="land" onclick="boing.land()"> land</button>
+    <button class="takeof" onclick="boing.takeof()">takeoff</button>
+    <div id="empty">
+        
+    </div>
+    
+<script>
+    let plane =  function(name){
+        this.name = name;
+        this.isFlying = false;
+        this.land = function(){
+            
+            document.getElementById("empty").innerHTML = "the plane is landing";
+        }
+        this.takeof = function(){
+            isFlying=true;
+            document.getElementById("empty").innerHTML = "the plane is taking off";
+        }
+    }
+    plane.takeoff=function(){
+        this.isFlying;
+    }
+
+    let boing = new plane("yonas");
+
+
+    
+
+</script>
+</body>
+
+</html>
