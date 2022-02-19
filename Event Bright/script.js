@@ -51,6 +51,8 @@ var repeat = function(activeClass){
     repeater();
   }
   repeat();
+
+  let newEvent = ``
   
 
   let trendingEvents = `<article class="card"> 
